@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "core",
     "user",
+    "recipe",
 ]
 
 MIDDLEWARE = [

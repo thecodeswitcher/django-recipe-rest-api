@@ -157,7 +157,7 @@ class PrivateUserApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
 
     def test_delete_as_super_user(self):
-        """Test that a super user can successfully delete a user"""
+        """Test that only a super user can successfully delete a user"""
         superuser = create_superuser(
             email="goku@zfighters.com",
             password="Kamehameha",
